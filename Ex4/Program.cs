@@ -279,9 +279,18 @@ namespace SkalProj_Datastrukturer_Minne
             } while (true);
         }
 
-        private static bool MatchCouple(char v, char ch)
+        private static bool MatchCouple(char open, char close)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            if (open.Equals('{') && close.Equals('}'))
+                return true;
+            if (open.Equals('<') && close.Equals('>'))
+                return true;
+            if (open.Equals('(') && close.Equals(')'))
+                return true;
+            if (open.Equals('[') && close.Equals(']'))
+                return true;
+            return false;
         }
 
         private static string DisplayList(List<string> theList)
