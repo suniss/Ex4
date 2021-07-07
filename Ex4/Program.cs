@@ -220,7 +220,7 @@ namespace SkalProj_Datastrukturer_Minne
                             Console.WriteLine("Reverse string :" + ReverseString(value));
                         break;
                     default:
-                        Console.WriteLine("Please only use +,- or # to update stack");
+                        Console.WriteLine("Please only use +,- or * to see stack behaves");
                         break;
                 }
 
